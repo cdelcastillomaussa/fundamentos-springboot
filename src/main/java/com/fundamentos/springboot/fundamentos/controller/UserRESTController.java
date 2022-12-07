@@ -32,7 +32,6 @@ public class UserRESTController {
 
     }
 
-
     @PostMapping("/")
     ResponseEntity<User> newUser(@RequestBody User newUser){
         return new ResponseEntity<>(createUser.save(newUser), HttpStatus.CREATED);
